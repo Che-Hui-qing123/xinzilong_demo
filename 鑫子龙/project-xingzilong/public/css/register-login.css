@@ -1,0 +1,230 @@
+   a, span, i {
+       display: inline-block;
+   }
+   
+   * {
+       box-sizing: border-box;
+   }
+   
+   .bar {
+       width: 100vw;
+       height: 8.1vh;
+       display: flex;
+       align-items: center;
+       padding-left: 1vw;
+       box-shadow: 0px 10px 10px #f0f0f0;
+   }
+   
+   .bar .register_icon {
+       width: 1.5vh;
+       height: 3.5vh;
+       background-size: cover;
+       background-image: url('/image/返回.png')
+   }
+   
+   .bar span {
+       position: absolute;
+       width: 100vw;
+       text-align: center;
+       color: #d01f3c;
+       font-size: 1.1875rem
+   }
+   
+   .form_register {
+       height: 35.2vh;
+   }
+   
+   .form, .login_icon {
+       margin-top: 10vh !important;
+       width: 78.6vw;
+       margin: 0 auto;
+   }
+   
+   .form_box>div{
+       width: 100%;
+       height: 8.8vh;
+       border-bottom: 1px solid #f0f0f0;
+       padding-left: 3.7vw;
+       display: flex;
+       align-items: center;
+       border: 1px solid #f0f0f0;
+   }
+   
+   .form i {
+       width: 1.9vh;
+       height: 2.3vh;
+       background-size: cover;
+   }
+   
+   .form_register .form_box>div:nth-child(1) i, .form_login .form_box>div:nth-child(1) i {
+       background-image: url('/image/手机号.png')
+   }
+   
+   .form_register .form_box>div:nth-child(2) i {
+       background-image: url('/image/验证码.png')
+   }
+   
+   .form_register .form_box>div:nth-child(3) i, .form_login .form_box>div:nth-child(2) i {
+       background-image: url('/image/密码.png')
+   }
+   
+   .form_register .form_box>div:nth-child(4) i {
+       background-image: url('/image/密码.png')
+   }
+
+
+   .form_box{
+       box-shadow: 10px 10px 10px #f0f0f0
+   }
+   .form input {
+       border: none;
+       font-size: 0.875rem;
+       margin-left: 3.7vw;
+       color: #999999;
+   }
+   
+   .button button {
+       border: none;
+       background-color: transparent;
+       width: 100%;
+       height: 7vh;
+       background-color: #d01f3c;
+       margin-top: 7vh;
+       font-size: 1rem;
+       color: white;
+       border-radius: 6vw;
+   }
+   
+   .form .register {
+       font-size: 0.875rem;
+       color: #999999;
+       margin-top: 4vh;
+       text-align: center;
+   }
+   
+   .verification-text {
+       color: #c01f3c;
+       font-size: 0.875rem;
+       position: relative;
+       left: 18vw;
+   }
+   
+   .bar_login {
+       position: absolute;
+       right: 2vw;
+       text-decoration: none;
+       font-size: 1rem;
+       color: #d01f3c;
+   }
+   
+   .login_text {
+       width: 100vw;
+       font-size: 0.875rem;
+       color: #999999;
+       display: flex;
+       margin-top: 10.2vh;
+   }
+   
+   .login_text hr {
+       width: 40vw;
+       border: none;
+       border-top: 1px solid #f0f0f0;
+   }
+   
+   .login_icon {
+       margin-top: 5.3vh;
+       display: flex;
+       justify-content: space-around;
+   }
+   
+   .login_icon i {
+       width: 11.7vw;
+       height: 11.9vw;
+       background-size: cover;
+   }
+   
+   .login_icon i:nth-child(1) {
+       background-image: url('/image/微信.png')
+   }
+   
+   .login_icon i:nth-child(2) {
+       background-image: url('/image/qq.png')
+   }
+   
+   .login_icon i:nth-child(3) {
+       background-image: url('/image/微博.png')
+   }
+   .content-teacher{
+    height: 13rem !important;
+}
+.imageInfo{
+    width: 7.5rem;
+    height: 2.51rem;
+    position: absolute;
+    top: 0;
+}
+.content-info span img{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+}
+.content-info span span{
+    display: block;
+    font-size: .38rem;
+    position: relative;
+    top: .3rem;
+}
+.content-info>span{
+    width: 7.5rem;
+    text-align: center;
+    position: relative;
+    z-index: 100000000;
+}
+.teacher-info{
+    position: relative;
+    top: .77rem;
+    padding-left: 1.28rem;
+    padding-right: 1.28rem;
+    box-shadow: 0 10px 10px #f0f0f0;
+}
+.teacher-info span{
+    font-size: .32rem;
+    display: inline-block;
+    height: .6rem;
+}
+.teacher-info span:nth-child(2){
+    position: relative;
+    left: 2.24rem;
+}
+.teacher-info span:nth-child(1){
+    border-bottom: .02rem solid #c01f3c;
+}
+.teacher-conte>div{
+    width: 7.1rem;
+    height: 2rem;
+    border: 1px solid #f0f0f0;
+    position: relative;
+    top: .9rem;
+    margin-top: .2rem;
+    margin-left: .2rem;
+    display: flex;
+     box-shadow: 0 10px 10px #f0f0f0;
+}
+.teacher-conte img{
+    width: .54rem;
+    height: .52rem;
+    position: relative;
+    left: .38rem;
+    top: .7rem;
+}
+.teacher-conte>div p{
+    font-size: .28rem;
+}
+.gray{
+    color: #666666;
+}
+.teacher-conte-text{
+    margin-left: .94rem;
+    position: relative;
+    top: -.2rem;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="Chen">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="author" content="">
+    <title></title>
+    <link rel="stylesheet" href="/base.css">
+    <script src="/lib/jquery.min.js"></script>
+    <link rel="stylesheet" href="/css/register-login.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <header class="bar">
+        <span>登录</span>
+        <a href="/html/user/register.html" class="bar_login">注册</a>
+    </header>
+    <main>
+        <form action="/users/login" method="post" class="form form_login">
+            <div class="form_box">
+                <div>
+                    <i></i>
+                    <input type="text" name="telNumber" placeholder="请输入手机号">
+                </div>
+                <div>
+                    <i></i>
+                    <input type="password" name="psw" placeholder="请输入密码">
+                </div>
+            </div>
+            <div class="button">
+                <button type="submit">确定</button>
+            </div>
+            <div class="register">
+                忘记密码?别慌
+            </div>
+
+        </form>
+    </main>
+    <footer>
+        <div class="login_text">
+            <hr>第三方登录
+            <hr>
+        </div>
+        <div class="login_icon">
+            <i></i>
+            <i></i>
+            <i></i>
+        </div>
+    </footer>
+    <script>
+        $('form').submit(function (e) {
+            e.preventDefault();
+            $.post(this.action, $(this).serialize(), function (data) {
+                if (data.code == 'error') {
+                    alert('用户名或者密码错误')
+                } else {
+                    alert('登录成功');
+                    location.href = '/'
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>

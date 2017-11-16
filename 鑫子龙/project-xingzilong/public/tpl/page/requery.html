@@ -1,0 +1,70 @@
+<div class="page-group">
+    <header class="bar bar-nav bar-icon">
+        <a href="#" class="icon pull-left open-panel"><img src="/image/web/返回.png" alt=""></a>
+        <h1 class="title">成绩查询</h1>
+    </header>
+
+    <div class="content content-requery">
+        <div>
+            <span>
+               <img src="/image/web/成绩1.png" alt="">
+               <input type="text" placeholder="请输入姓名">
+            </span>
+            <span>
+
+            </span>
+        </div>
+        <div>
+            <span>
+                <img src="/image/web/成绩2.png" alt="">
+                <input type="text" placeholder="请选择分馆">
+           </span>
+            <span>海沧天虹旗舰馆<img src="/image/web/箭头.png" class="requery-img" alt=""></span>
+        </div>
+        <div>
+            <span>
+                <img src="/image/web/成绩3.png" alt="">
+                <input type="text" placeholder="请选择班级">
+            </span>
+            <span>跆拳道班<img src="/image/web/箭头.png" class="requery-img" alt=""></span>
+        </div>
+        <div>
+            <span>
+                <img src="/image/web/成绩4.png" alt="">
+                <input type="text" placeholder="请选择验证码">
+            </span>
+            <span>
+                验证码
+            </span>
+        </div>
+        <div class="requery-button">
+            <button onclick="requery()">确认</button>
+        </div>
+    </div>
+
+</div>
+<script>
+    function requery() {
+        $('body').append(`
+        <div class='wushu-bg'>
+            <div class='wushuPerson'>
+            <div class='wushuQu' onclick='PersonClose()'>x</div>
+                <img src='/image/web/yes.png' class='requery'>
+                <div class='reqImageP'>
+                    <span>
+                        <p class='reqP'><img src='/image/web/人2.png' class='reImage'><span class='reqName'>陈慧青</span></p>
+                        <p class='reqP'><img src='/image/web/人3.png' class='reImage'><span class='reqName'>武术一班</span></p>
+                        <p class='reqP'><img src='/image/web/人4.png' class='reImage'><span class='reqName'>2017-11-12</span></p>
+                    </span>
+                    <img src='/image/web/82.png' class='req82'>
+                </div>
+            </div>
+          </div>
+        `)
+    }
+    function PersonClose() {
+        $('.wushu-bg').empty();
+        $('.wushu-bg').removeClass('wushu-bg')
+    }
+
+</script>
